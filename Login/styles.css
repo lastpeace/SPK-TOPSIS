@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Set container width to 100% */
+  height: 100%; /* Set container height to 100% */
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  width: 77.84px;
+  height: 75.43px;
+}
+
+.app-name {
+  margin-left: 20px;
+  color: #ee4d2d;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.login-section,
+.welcome-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.login-section {
+  background-color: #ffffff;
+  display: flex;
+  padding-left: 0px;
+}
+
+.login-box {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-box button {
+  width: 50%;
+  padding: 10px;
+  background-color: #f46431;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px; /* Font size */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Center the button horizontally */
+  display: block;
+}
+
+.login-box button:hover {
+  background-color: #f46431;
+}
+
+.welcome-section {
+  background-color: #f46431;
+  color: #fff;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.welcome-section img {
+  max-width: 40%;
+  height: 40%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .welcome-section {
+    padding: 20px;
+  }
+}
